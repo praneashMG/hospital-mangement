@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPay Scanner</title>
+</head>
+<body>
+
+    <!-- Your GPay scanner code goes here -->
+
+    <!-- After successful payment, add a button to navigate back -->
+    <button onclick="navigateBack(true)">Payment Successful! Click to go back</button>
+
+    <script>
+        function navigateBack(paymentSuccessful) {
+            window.location.href = "pat_preslist.php?paymentStatus=" + paymentSuccessful;
+        }
+    </script>
+
+</body>
+</html>
